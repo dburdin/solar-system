@@ -1,0 +1,178 @@
+html,
+body {
+    background: #0b1c22;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.orbit {
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    position: absolute;
+    border-radius: 100%;
+    margin: -50px auto;
+    -webkit-animation: orbit 12s linear infinite;
+    animation: orbit 12s linear infinite;
+}
+.orbit--second {
+    width: 450px;
+    height: 450px;
+    margin: -125px auto;
+    animation: orbit 1s linear infinite;
+    -webkit-animation: orbit 15s linear infinite;
+}
+.orbit--third {
+    width: 600px;
+    height: 600px;
+    margin: -200px auto;
+    animation: orbit 1s linear infinite;
+    -webkit-animation: orbit 18s linear infinite;
+}
+.orbit--fouth {
+    width: 750px;
+    height: 750px;
+    margin: -275px auto;
+    animation: orbit 1s linear infinite;
+    -webkit-animation: orbit 21s linear infinite;
+}
+
+.sun {
+    background: #ff9012;
+    box-shadow: inset -30px -30px 0px #dd9105;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.mercury {
+    background: #e7e8ec;
+    box-shadow: inset -7px -7px 0 #8c8c94;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.mercury:before {
+    content: "";
+    background: #b1adad;
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.mercury:after {
+    content: "";
+    background: #b1adad;
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    display: block;
+    margin: -7px 20px;
+}
+
+.venus {
+    background: #f8e2b0;
+    box-shadow: inset -7px -7px 0 #eecb8b;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    margin: calc(65px/2)
+}
+.venus:before {
+    content: "";
+    background: #d3a567;
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.venus:after {
+    content: "";
+    background: #d3a567;
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    display: block;
+    margin: -7px 20px;
+}
+.earth {
+    background: #9fc164;
+    box-shadow: inset -7px -7px 0 #6b93d6;
+    width: 57px;
+    height: 57px;
+    border-radius: 100%;
+    margin: 60px;
+}
+
+.earth:before {
+    content: "";
+    background: #6b93d6;
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.earth:after {
+    content: "";
+    background: #6b93d6;
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    display: block;
+    margin: -7px 20px;
+}
+
+.mars {
+    background: #c1440e;
+    box-shadow: inset -7px -7px 0 #451804;
+    width: 53px;
+    height: 53px;
+    border-radius: 100%;
+    margin: 84px;
+}
+
+.mars:before {
+    content: "";
+    background: #e77d11;
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.mars:after {
+    content: "";
+    background: #e77d11;
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    display: block;
+    margin: -7px 20px;
+}
+
+@-webkit-keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
